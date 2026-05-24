@@ -5,14 +5,14 @@ def quickSort(arr):
     left=[];
     right=[];
     equal=[];
-    
-    for x in arr:
-        if x<pivot:
-            left.append(x);
-        elif x>pivot:
-            right.append(x);
+    for num in arr:
+        if num<pivot:
+            left.append(num);
+        elif num>pivot:
+            right.append(num);
         else:
-            equal.append(x);
+            equal.append(num);
+            
     return quickSort(left)+equal+quickSort(right);
 
 arr=[4,3,2,1];
