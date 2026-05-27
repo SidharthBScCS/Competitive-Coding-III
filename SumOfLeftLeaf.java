@@ -1,3 +1,13 @@
+class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+    }
+}
+
 public class SumOfLeftLeaf {
     public static int leftLeafSum(Node root) {
         if (root == null) {
